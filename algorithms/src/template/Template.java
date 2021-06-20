@@ -1,16 +1,20 @@
-public class Example {
+package template;
+
+import algorithms.SelectionSort;
+
+public class Template {
 
     public static boolean less(Comparable v, Comparable w) {
         return v.compareTo(w) < 0;
     }
 
-    private static void exch(Comparable[] a, int i, int j) {
+    public static void exch(Comparable[] a, int i, int j) {
         Comparable t = a[i];
         a[i] = a[j];
         a[j] = t;
     }
 
-    private static void show(Comparable[] a) {
+    public static void show(Comparable[] a) {
         //Вывод массива в одной строке.
         for (Comparable comparable : a) {
             System.out.print(comparable + " ");
@@ -26,5 +30,13 @@ public class Example {
             }
         }
         return true;
+    }
+
+    public static void main(String[] args) {
+        Comparable[] array = {5, 4, 2, 6, 1, 8, 9};
+        SelectionSort.sort(array);
+        for (Comparable comparable: array) {
+            System.out.print(comparable + " ");
+        }
     }
 }
