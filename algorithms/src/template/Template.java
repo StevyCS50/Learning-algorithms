@@ -34,7 +34,7 @@ public class Template {
 
     public static void main(String[] args) {
         Comparable[] array = {5, 4, 2, 6, 1, 8, 9};
-        InsertionSort.insertSort(array);
+        //Тест сортировки
         for (Comparable comparable: array) {
             System.out.print(comparable + " ");
         }
