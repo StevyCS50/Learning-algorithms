@@ -1,6 +1,6 @@
 package template;
 
-import algorithms.SelectionSort;
+import algorithms.*;
 
 public class Template {
 
@@ -34,7 +34,7 @@ public class Template {
 
     public static void main(String[] args) {
         Comparable[] array = {5, 4, 2, 6, 1, 8, 9};
-        SelectionSort.sort(array);
+        InsertionSort.insertSort(array);
         for (Comparable comparable: array) {
             System.out.print(comparable + " ");
         }
